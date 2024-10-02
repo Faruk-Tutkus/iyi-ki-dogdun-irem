@@ -169,13 +169,14 @@
 </div>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script></script>
-  <audio id="birthdayMusic" src="music.mp3" muted="muted"></audio>
+  <audio id="birthdayMusic" src="music.mp3"></audio>
 
   <script>
     const birthdayMusic = document.getElementById('birthdayMusic');
-
+    birthdayMusic.muted = true
     // müzik
     window.addEventListener('load', function() {
+      birthdayMusic.muted = false;
       birthdayMusic.play().catch(function(error) {
         console.log('Tarayıcı otomatik oynatmayı engelledi:', error);
       });
