@@ -17,7 +17,7 @@ body {
            position: absolute;
            filter: drop-shadow(1px 0 rgba(0,0,0,.3));
            z-index:2;
-           left: 3px;
+           left: 4px;
            top:20px;
            animation: rotate 5s linear infinite reverse;
        }
