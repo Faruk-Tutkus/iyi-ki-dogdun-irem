@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - new cake</title>
+  <title>İyi ki Doğdun İrem</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style.css">
 
@@ -167,20 +167,27 @@
   <h1>Happy Birthday!</h1>
   <p>IREM</p>
 </div>
+<div class="music-box">
+  <input type="checkbox" id="music">
+  <label class="music" for="music"></label>
+  <audio id="player">
+<source src="music.mp3" type="audio/mpeg"/>
+</audio>
+<div class="box-inside">
+  <div class="ballerina">
+      <div class="head"></div>
+      <div class="skirt"></div>
+      <div class="legs"></div>
+      <div class="right-arm"></div>
+      <div class="left-arm"></div>
+  </div>
+<div class="inner"></div>
+</div>
+<div class="box"></div>
+<div class="shadow"></div>
+</div>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script></script>
-  <audio id="birthdayMusic" src="music.mp3"></audio>
-
-  <script>
-    const birthdayMusic = document.getElementById('birthdayMusic');
-    birthdayMusic.muted = true
-    // müzik
-    window.addEventListener('load', function() {
-      birthdayMusic.muted = false;
-      birthdayMusic.play().catch(function(error) {
-        console.log('Tarayıcı otomatik oynatmayı engelledi:', error);
-      });
-    });
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
